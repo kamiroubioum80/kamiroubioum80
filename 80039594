@@ -1,10 +1,65 @@
-- 👋 Hi, I’m @kamiroubioum80
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
 
-<!---
-kamiroubioum80/kamiroubioum80 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Organic Agropastoral Pi</title>
+
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+  <script>
+    Pi.init({ version: "2.0", sandbox: true }); // mode test
+  </script>
+</head>
+
+<body>
+  <h1>Organic Agropastoral</h1>
+  <p>Application agropastorale avec paiement Pi</p>
+
+  <button onclick="login()">Connexion Pi</button>
+  <br><br>
+  <button onclick="payer()">Payer 1 Pi</button>
+
+  <script>
+    let user = null;
+
+    function login() {
+      Pi.authenticate(
+        ["username"],
+        function(auth) {
+          user = auth.user;
+          alert("Connecté : " + user.username);
+        },
+        function(error) {
+          console.log(error);
+        }
+      );
+    }
+
+    function payer() {
+      if (!user) {
+        alert("Connecte-toi d'abord");
+        return;
+      }
+
+      Pi.createPayment({
+        amount: 1,
+        memo: "Paiement Organic Agropastoral",
+        metadata: { service: "agropastoral" }
+      }, {
+        onReadyForServerApproval: function(paymentId) {
+          console.log("Paiement prêt :", paymentId);
+        },
+        onReadyForServerCompletion: function(paymentId, txid) {
+          alert("Paiement réussi 🎉");
+        },
+        onCancel: function(paymentId) {
+          alert("Paiement annulé");
+        },
+        onError: function(error) {
+          console.log(error);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

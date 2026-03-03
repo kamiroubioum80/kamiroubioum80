@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Organic Agropastoral Pi</title>
+  <title>Organic Agropastoralpi.pi Pi</title>
 
   <script src="https://sdk.minepi.com/pi-sdk.js"></script>
   <script>
@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <h1>Organic Agropastoral</h1>
-  <p>Application agropastorale avec paiement Pi</p>
+  <h1>Organic Agro-pastoralepi.pi</h1>
+  <p>Application organicagropastoralepi.pi avec paiement Pi</p>
 
   <button onclick="login()">Connexion Pi</button>
   <br><br>
@@ -43,8 +43,8 @@
 
       Pi.createPayment({
         amount: 1,
-        memo: "Paiement Organic Agropastoral",
-        metadata: { service: "agropastoral" }
+        memo: "Paiement Organic Agropastoralepi.pi",
+        metadata: { service: "Agro-pastoralepi.pi" }
       }, {
         onReadyForServerApproval: function(paymentId) {
           console.log("Paiement prêt :", paymentId);

@@ -59,10 +59,10 @@
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/organicagropastoralepi.git
+git clone https://github.com/votre-username/organicagropastoralepi.pi.git
 
 # Installer les dépendances
-cd organicagropastoralepi
+cd organicagropastoralepi.pi
 npm install
 
 # Configurer les variables d'environnement
@@ -119,7 +119,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 ## 🏢 Structure du Projet
 
 ```
-OrganicAgropastoralPI/
+OrganicAgropastoralPI.PI/
 │
 ├── index.html ✅
 ├── server.js ✅

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Organic Agropastoral PI</title>
+
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+<script>
+Pi.init({
+  version: "2.0",
+  sandbox: true
+});
+</script>
+
+</head>
+
+<body>
+
+<h1>Organic Agropastoral PI</h1>
+
+<button onclick="login()">Connexion Pi</button>
+<br><br>
+<button onclick="payer()">Payer 1 Pi</button>
+
+<script>
+
+let user;
+
+function login() {
+Pi.authenticate(["username"], auth => {
+user = auth.user;
+alert("Bienvenue " + user.username);
+});
+}
+
+function payer() {
+
+Pi.createPayment({
+amount: 1,
+memo: "Paiement service agricole",
+metadata: { type: "service" }
+
+},{
+onReadyForServerApproval(paymentId){
+fetch("/approve",{
+method:"POST",
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify({paymentId})
+});
+},
+
+onReadyForServerCompletion(paymentId,txid){
+fetch("/complete",{
+method:"POST",
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify({paymentId,txid})
+});
+alert("Paiement réussi ✅");
+}
+
+});
+}
+
+</script>
+
+</body>
+</html>

@@ -119,24 +119,12 @@ Les contributions sont les bienvenues ! Pour contribuer :
 ## 🏢 Structure du Projet
 
 ```
-organicagropastoralepi/
-├── app/                    # Pages Next.js
-│   ├── page.tsx           # Page principale
-│   ├── privacy/           # Politique de confidentialité
-│   └── terms/             # Conditions d'utilisation
-├── components/            # Composants React
-│   ├── ui/               # Composants shadcn/ui
-│   ├── landing-page.tsx  # Page d'accueil
-│   ├── wallet-section.tsx
-│   └── ...
-├── hooks/                 # Custom React hooks
-│   ├── use-chatbot.ts
-│   └── use-pi-network-authentication.ts
-├── lib/                   # Utilitaires
-│   ├── app-config.ts
-│   └── system-config.ts
-└── public/               # Assets statiques
-```
+OrganicAgropastoralPI/
+│
+├── index.html ✅
+├── server.js ✅
+├── package.json ✅
+└── README.md
 
 ## 📊 Roadmap
 

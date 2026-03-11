@@ -1,4 +1,4 @@
-vercel# OrganicAgropastoralepi.pi 🌱
+index.htmlvercel# OrganicAgropastoralepi.pi 🌱
 
 > Marketplace agro-pastorale biologique intégrée à Pi Network
 
@@ -160,3 +160,37 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 **Fait avec ❤️ pour une agriculture durable et un commerce équitable**
 
 *OrganicAgropastoralepi.pi - Connecter la nature au futur*
+<!DOCTYPE html>
+<html>
+<head>
+<title>OrganicAgropastoralepi</title>
+</head>
+
+<body>
+<h1>Bienvenue sur OrganicAgropastoralepi</h1>
+<p>Plateforme agricole et d’élevage.</p>
+</body>
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>OrganicAgropastoralepi</title>
+</head>
+
+<body>
+<h1>Bienvenue sur OrganicAgropastoralepi</h1>
+<p>Plateforme agricole et d’élevage.</p>
+</body>
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>OrganicAgropastoralepi</title>
+</head>
+
+<body>
+<h1>Bienvenue sur OrganicAgropastoralepi</h1>
+<p>Plateforme agricole et d’élevage.</p>
+</body>
+
+</html>

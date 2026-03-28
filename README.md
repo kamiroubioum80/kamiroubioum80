@@ -142,7 +142,9 @@ OrganicAgropastoralPI.PI/
 ## 📧 Contact
 
 **Email**: kamiroubioum98@gmail.com  
-**Application**: OrganicAgropastoralepi.pi  
+Téléphone :÷229 0197478121/0140697970/0164299998
+**Application**:
+ OrganicAgropastoralepi.pi  
 **Website**: https://organicagropasto1207.pinet.com
 
 ## 📜 Licence

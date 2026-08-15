@@ -1,6 +1,0 @@
-
-organic-agropastoral/
-├── index.html          ← ton site
-├── README.md
-├── validation-key.txt  ← pour Pi Network
-└── vercel.json         ← pour dire à Vercel que c'est du HTML

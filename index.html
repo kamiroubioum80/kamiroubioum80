@@ -1,21 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Organic AgroPastoralEPI Pi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OrganicAgropastoralepi.pi - Agriculture biologique et développement agro-pastoral">
+  <title>OrganicAgropastoralepi.pi</title>
 
-<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f2;
+      color: #1f3d24;
+    }
 
-<script>
-Pi.init({
-  version: "2.0",
-  sandbox: true
-});
-</script>
+    header {
+      background: #1f6b35;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
 
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .welcome {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #1f6b35;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Bienvenue sur Organic AgroPastoralEPI</h1>
-<p>Application Pi Network</p>
+
+  <header>
+    <h1>🌱 OrganicAgropastoralepi.pi</h1>
+    <p>Pour une agriculture biologique et un développement durable</p>
+  </header>
+
+  <main>
+
+    <section class="welcome">
+      <h2>Bienvenue</h2>
+      <p>
+        Bienvenue sur la plateforme OrganicAgropastoralepi.pi.
+        Notre objectif est de promouvoir l'agriculture biologique,
+        l'élevage et le développement agro-pastoral.
+      </p>
+    </section>
+
+    <h2>🌿 Nos activités</h2>
+
+    <section class="activities">
+
+      <div class="card">
+        <div style="font-size:40px;">🌱</div>
+        <h3>Agriculture biologique</h3>
+        <p>Production et promotion de produits agricoles biologiques.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:40px;">🐄</div>
+        <h3>Élevage</h3>
+        <p>Développement de l'élevage et des activités agro-pastorales.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:40px;">🐟</div>
+        <h3>Pisciculture</h3>
+        <p>Développement de la production piscicole durable.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:40px;">💧</div>
+        <h3>Irrigation</h3>
+        <p>Solutions d'irrigation pour améliorer la production agricole.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:40px;">☀️</div>
+        <h3>Énergie solaire</h3>
+        <p>Promotion des systèmes solaires pour les activités agricoles.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:40px;">🛒</div>
+        <h3>Produits biologiques</h3>
+        <p>Valorisation et mise en relation des producteurs et consommateurs.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 OrganicAgropastoralepi.pi</p>
+    <p>Connecter la nature au futur 🌱</p>
+  </footer>
+
 </body>
 </html>
 
